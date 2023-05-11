@@ -8,7 +8,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Static System function Like Python</Title>
     <Authors>heartacker</Authors>
-    <Description>provide some static funtion that like python</Description>
+    <Description>provide some static funtion that like python and write c# some like Python</Description>
     <Copyright>MIT</Copyright>
     <PackageProjectUrl></PackageProjectUrl>
     <PackageIcon>S.System.png</PackageIcon>

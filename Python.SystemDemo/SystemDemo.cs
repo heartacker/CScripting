@@ -1,13 +1,12 @@
-﻿using static S.System;
-using System;
+﻿using static Python.System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace S.Tests
+namespace Python.SystemDemo
 {
-    public class SystemDemo
+    public class Demo
     {
         public static void Main(string[] args)
         {

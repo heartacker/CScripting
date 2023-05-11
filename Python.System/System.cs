@@ -16,7 +16,7 @@ using static Python.Runtime.Runtime;
 using static Python.Runtime.Py;
 using static Python.Runtime.PythonEngine;
 
-namespace S
+namespace Python
 {
     /// <summary>
     /// A:

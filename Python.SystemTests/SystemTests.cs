@@ -1,14 +1,13 @@
-﻿using S;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using static S.System;
+using static Python.System;
 
-namespace S.Tests
+namespace Python.Tests
 {
     [TestClass()]
     public class SystemTests
