@@ -4,8 +4,8 @@
 
 #!csharp
 
-#r "nuget: S.System, *"
-using static S.System;
+#r "nuget: Python.System, *"
+using static Python.System;
 
 #!csharp
 
@@ -31,9 +31,9 @@ print(bin(value));
 
 #!csharp
 
-using static System.Math;
+//
 
 #!csharp
 
-var _12 = Abs(-12);
+var _12 = abs(-12);
 print(_12);
