@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<IsPackable>false</IsPackable>
+
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\S.System\S.System.csproj" />
+	</ItemGroup>
+
+</Project>
