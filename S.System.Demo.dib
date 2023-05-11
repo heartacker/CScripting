@@ -28,3 +28,12 @@ var value = 0xa55a55aa;
 var valuebin = bin(value);
 print(valuebin);
 print(bin(value)); 
+
+#!csharp
+
+using static System.Math;
+
+#!csharp
+
+var _12 = Abs(-12);
+print(_12);

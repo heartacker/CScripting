@@ -1,13 +1,22 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.IO;
+using System.Linq;
 using System.Numerics;
+using System.Collections.Generic;
+
+
+using static System.Math;
+using static System.Linq.Enumerable;
+using static System.Numerics.Complex;
+using static System.Numerics.BigInteger;
+
 
 namespace S
 {
     /// <summary>
     /// A:
-    /// abs()
+    /// abs()    <see cref="abs"/> <see cref="Math.Abs"/>
     /// aiter()
     /// all()
     /// any()
@@ -119,13 +128,71 @@ namespace S
     /// </summary>
     public static class System
     {
+        public static double Abs(Complex num)
+        {
+            return Abs(num.Magnitude);
+        }
+
+        [Obsolete("This method is deprecated, use `Abs` instead.")]
+        public static double abs(Complex num) => Abs(num);
+
+
+        [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+        public static int abs(int num) => Math.Abs(num);
+
+
+
+        /// <summary>
+        ///  <see cref="Enumerable"/>
+        /// </summary>
+        /// <typeparam name="TSource"></typeparam>
+        /// <param name="iterable"></param>
+        /// <param name="predicate"></param>
+        /// <returns></returns>
+        public static bool All<TSource>(IEnumerable<TSource> iterable, Func<TSource, bool> predicate = null)
+        {
+            if (predicate == null)
+                return iterable.All(a => Convert.ToBoolean(a));
+            else
+                return iterable.All(predicate);
+        }
+
+
+        [Obsolete("This method is deprecated, use `{nameof(All)}` instead.")]
+        public static bool all<TSource>(IEnumerable<TSource> iterable, Func<TSource, bool> predicate = null)
+            => All(iterable, predicate);
+
+
+
+        /// <summary>
+        ///  <see cref="Enumerable"/>
+        /// </summary>
+        /// <typeparam name="TSource"></typeparam>
+        /// <param name="iterable"></param>
+        /// <param name="predicate"></param>
+        /// <returns></returns>
+        public static bool Any<TSource>(IEnumerable<TSource> iterable, Func<TSource, bool> predicate = null)
+        {
+            if (predicate == null)
+                return iterable.Any();
+            else
+                return iterable.Any(predicate);
+        }
+
+
+        [Obsolete("This method is deprecated, use `{nameof(Any)}` instead.")]
+        public static bool any<TSource>(IEnumerable<TSource> iterable, Func<TSource, bool> predicate = null)
+            => Any(iterable, predicate);
+
+
+
         /// <summary>
         /// 将整形的数转为hex
         /// </summary>
         /// <param name="num">整数</param>
         /// <param name="width">位宽，<see langword="null"/> 则不关注，如果转换结果大于位宽，则取位宽</param>
         /// <returns>hex字符串</returns>
-        public static string hex(long num, int? width = null)
+        public static string Hex(long num, int? width = null)
         {
             if (width == null || width <= 0)
             {
@@ -137,6 +204,9 @@ namespace S
                 return string.Format(format, num);
             }
         }
+
+        [Obsolete("This method is deprecated, use `{nameof(Hex)}` instead.")]
+        public static string hex(long num, int? width = null) => Hex(num, width);
 
         /// <summary>
         /// 将ulong整形的数转为hex
@@ -144,7 +214,8 @@ namespace S
         /// <param name="num">整数</param>
         /// <param name="width">位宽，<see langword="null"/> 则不关注，如果转换结果大于位宽，则取位宽</param>
         /// <returns>hex字符串</returns>
-        public static string hex(ulong num, int? width = null)
+
+        public static string Hex(ulong num, int? width = null)
         {
             if (width == null || width <= 0)
             {
@@ -157,7 +228,8 @@ namespace S
             }
         }
 
-
+        [Obsolete("This method is deprecated, use `{nameof(Hex)}` instead.")]
+        public static string hex(ulong num, int? width = null) => Hex(num, width);
 
         /// <summary>
         /// 将整形的数转为二进制
@@ -165,7 +237,7 @@ namespace S
         /// <param name="num">整数</param>
         /// <param name="width">位宽，<see langword="null"/> 则不关注，如果转换结果大于位宽，则取位宽</param>
         /// <returns>二进制字符串</returns>
-        public static string bin(long num, int? width = null)
+        public static string Bin(long num, int? width = null)
         {
             if (width == null || width <= 0)
             {
@@ -187,7 +259,18 @@ namespace S
             }
         }
 
+        [Obsolete("This method is deprecated, use `{nameof(bin)}` instead.")]
+        public static string bin(long num, int? width = null) => Bin(num, width);
+
+
+        [Obsolete("This method is deprecated, use `{nameof(Print)}` instead.")]
         public static void print(object objects,
+                                 string sep = " ",
+                                 string end = "\r\n",
+                                 StreamWriter file = null,
+                                 bool flush = false) => Print(objects, sep, end, file, flush);
+
+        public static void Print(object objects,
                                  string sep = " ",
                                  string end = "\r\n",
                                  StreamWriter file = null,
@@ -200,7 +283,15 @@ namespace S
             if (flush) _file.Flush();
         }
 
+
+        [Obsolete("This method is deprecated, use `{nameof(Print)}` instead.")]
         public static void print(IList objects,
+                                 string sep = " ",
+                                 string end = "\r\n",
+                                 StreamWriter file = null,
+                                 bool flush = false) => Print(objects, sep, end, file, flush);
+
+        public static void Print(IList objects,
                                  string sep = " ",
                                  string end = "\r\n",
                                  StreamWriter file = null,
