@@ -132,6 +132,8 @@ namespace Python
     /// </summary>
     public static class System
     {
+        #region abs
+
         public static double Abs(Complex num)
         {
             return Abs(num.Magnitude);
@@ -155,12 +157,30 @@ namespace Python
         [Obsolete("This method is deprecated, use `Abs` instead.")]
         public static double abs(Complex num) => Abs(num);
 
-
         [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
         public static int abs(int num) => Math.Abs(num);
 
+        [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+        public static long abs(long num) => Math.Abs(num);
 
+        [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+        public static short abs(short num) => Math.Abs(num);
 
+        [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+        public static sbyte abs(sbyte num) => Math.Abs(num);
+
+        [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+        public static double abs(double num) => Math.Abs(num);
+
+        [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+        public static decimal abs(decimal num) => Math.Abs(num);
+
+        [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+        public static float abs(float num) => Math.Abs(num);
+
+        #endregion
+
+        #region all
         /// <summary>
         ///  <see cref="Enumerable"/>
         /// </summary>
@@ -181,8 +201,9 @@ namespace Python
         public static bool all<TSource>(IEnumerable<TSource> iterable, Func<TSource, bool> predicate = null)
             => All(iterable, predicate);
 
+        #endregion
 
-
+        #region any
         /// <summary>
         ///  <see cref="Enumerable"/>
         /// </summary>
@@ -203,8 +224,9 @@ namespace Python
         public static bool any<TSource>(IEnumerable<TSource> iterable, Func<TSource, bool> predicate = null)
             => Any(iterable, predicate);
 
+        #endregion
 
-
+        #region hex
         /// <summary>
         /// 将整形的数转为hex
         /// </summary>
@@ -250,6 +272,10 @@ namespace Python
         [Obsolete("This method is deprecated, use `{nameof(Hex)}` instead.")]
         public static string hex(ulong num, int? width = null) => Hex(num, width);
 
+        #endregion
+
+        #region bin
+
         /// <summary>
         /// 将整形的数转为二进制
         /// </summary>
@@ -281,6 +307,9 @@ namespace Python
         [Obsolete("This method is deprecated, use `{nameof(bin)}` instead.")]
         public static string bin(long num, int? width = null) => Bin(num, width);
 
+        #endregion
+
+        #region print
 
         [Obsolete("This method is deprecated, use `{nameof(Print)}` instead.")]
         public static void print(object objects,
@@ -325,6 +354,7 @@ namespace Python
             _file.Write(end);
             if (flush) _file.Flush();
         }
-    }
+        #endregion
 
+    }
 }
