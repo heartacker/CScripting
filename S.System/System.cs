@@ -1,14 +1,16 @@
-﻿using System.Numerics;
+using System.Collections;
+using System.Numerics;
 
 namespace S;
-
-public enum MyEnum
-{
-    a, b, c, d, e, f
-}
 public static class System
 {
-    public static string hex<T>(T num, int? width = null) where T : INumber<T>
+    /// <summary>
+    /// 将整形的数转为hex
+    /// </summary>
+    /// <param name="num">整数</param>
+    /// <param name="width">位宽，<see langword="null"/> 则不关注，如果转换结果大于位宽，则取位宽</param>
+    /// <returns>hex字符串</returns>
+    public static string hex(long num, int? width = null)
     {
         if (width == null || width <= 0)
         {
@@ -18,6 +20,55 @@ public static class System
         {
             string format = "0x{0:" + "X" + width + "}";
             return string.Format(format, num);
+        }
+    }
+
+    /// <summary>
+    /// 将ulong整形的数转为hex
+    /// </summary>
+    /// <param name="num">整数</param>
+    /// <param name="width">位宽，<see langword="null"/> 则不关注，如果转换结果大于位宽，则取位宽</param>
+    /// <returns>hex字符串</returns>
+    public static string hex(ulong num, int? width = null)
+    {
+        if (width == null || width <= 0)
+        {
+            return string.Format("0x{0:X}", num);
+        }
+        else
+        {
+            string format = "0x{0:" + "X" + width + "}";
+            return string.Format(format, num);
+        }
+    }
+
+
+
+    /// <summary>
+    /// 将整形的数转为二进制
+    /// </summary>
+    /// <param name="num">整数</param>
+    /// <param name="width">位宽，<see langword="null"/> 则不关注，如果转换结果大于位宽，则取位宽</param>
+    /// <returns>二进制字符串</returns>
+    public static string bin(long num, int? width = null)
+    {
+        if (width == null || width <= 0)
+        {
+            return "0b" + Convert.ToString(num, 2);
+        }
+        else
+        {
+            string format = Convert.ToString(num, 2);
+            if (format.Length < width)
+            {
+                string par = "";
+                for (int c = 0; c < width - format.Length; c++)
+                {
+                    par += "0";
+                }
+                return "0b" + par + format;
+            }
+            return "0b" + format;
         }
     }
 }
