@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Numerics;
 
 namespace S;
@@ -70,5 +70,34 @@ public static class System
             }
             return "0b" + format;
         }
+    }
+
+    public static void print(object objects,
+                             string sep = " ",
+                             string end = "\r\n",
+                             StreamWriter file = null,
+                             bool flush = false)
+    {
+        var _file = file ?? Console.Out;
+
+        _file!.Write(objects.ToString());
+        _file!.Write(end);
+        if (flush) _file.Flush();
+    }
+
+    public static void print(IList objects,
+                             string sep = " ",
+                             string end = "\r\n",
+                             StreamWriter file = null,
+                             bool flush = false)
+    {
+        var _file = file ?? Console.Out;
+        foreach (var item in objects)
+        {
+            _file!.Write(item.ToString());
+            _file!.Write(sep);
+        }
+        _file!.Write(end);
+        if (flush) _file.Flush();
     }
 }
