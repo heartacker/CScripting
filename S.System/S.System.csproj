@@ -19,6 +19,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="pythonnet" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="S.System.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.IO;
 using System.Linq;
@@ -11,6 +11,10 @@ using static System.Linq.Enumerable;
 using static System.Numerics.Complex;
 using static System.Numerics.BigInteger;
 
+using Python.Runtime;
+using static Python.Runtime.Runtime;
+using static Python.Runtime.Py;
+using static Python.Runtime.PythonEngine;
 
 namespace S
 {
@@ -132,6 +136,21 @@ namespace S
         {
             return Abs(num.Magnitude);
         }
+
+        /// <summary>
+        /// 仅支持复数类型
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
+        public static double Abs(PyObject num)
+        {
+            using (GIL())
+            {
+                var c = num.As<Complex>();
+                return Abs(c.Magnitude);
+            }
+        }
+
 
         [Obsolete("This method is deprecated, use `Abs` instead.")]
         public static double abs(Complex num) => Abs(num);
