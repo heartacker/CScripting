@@ -8,7 +8,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Static System function Like Python</Title>
     <Authors>heartacker</Authors>
-    <Description>provide some static funtion that like python</Description>
+    <Description>provide some static funtion that like python and write c# some like Python</Description>
     <Copyright>MIT</Copyright>
     <PackageProjectUrl></PackageProjectUrl>
     <PackageIcon>S.System.png</PackageIcon>
@@ -17,6 +17,10 @@
     <PackageTags>static;python;function;script;</PackageTags>
     <PackageReleaseNotes>初始化版本。添加 hex,bin,print 函数</PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="pythonnet" Version="3.0.1" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Update="S.System.png">

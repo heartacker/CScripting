@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\S.System\S.System.csproj" />
+    <ProjectReference Include="..\Python.System\Python.System.csproj" />
   </ItemGroup>
 
 </Project>
