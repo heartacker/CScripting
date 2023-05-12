@@ -1,3 +1,5 @@
+#r "nuget: Python.System, *"
+
 
 addr = 0x12345678
 addrr = hex(addr)

@@ -1,4 +1,4 @@
-#r "nuget: Python.System, 1.0.2"
+#r "nuget: Python.System, *"
 using static Python.System;
 
 var addr = 0x12345678;

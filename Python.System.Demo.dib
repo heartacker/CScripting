@@ -4,7 +4,7 @@
 
 #!csharp
 
-#r "nuget: Python.System, 1.0.2"
+#r "nuget: Python.System, *"
 
 #!csharp
 

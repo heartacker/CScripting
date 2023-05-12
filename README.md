@@ -23,7 +23,7 @@ We aim to implement the **built-in function of python in `C#`** and **direct use
 🔗 [ **C#** ](./Python.System.Demo.csx)
 
 ```csharp
-#r "nuget: Python.System, 1.0.2"
+#r "nuget: Python.System, *"
 using static Python.System;
 
 var addr = 0x12345678;
@@ -123,7 +123,7 @@ print(c, sep="\t")
 
 ```shell
 ~$ dotnet-script
-> #r "nuget: Python.System, 1.0.2"
+> #r "nuget: Python.System, *"
 > using static Python.System;
 > hex(1024)
 "0x400"
