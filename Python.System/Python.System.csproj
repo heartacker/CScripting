@@ -17,7 +17,7 @@
     <PackageTags>static;python;function;script;</PackageTags>
     <PackageReleaseNotes>初始化版本。添加 hex,bin,print 函数</PackageReleaseNotes>
     <AssemblyVersion>0.0.0.2</AssemblyVersion>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
