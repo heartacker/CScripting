@@ -1,13 +1,4 @@
-#!meta
-
-{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"languageName":"csharp","name":"csharp"}]}}
-
-#!csharp
-
 #r "nuget: Python.System, 1.0.2"
-
-#!csharp
-
 using static Python.System;
 
 var addr = 0x12345678;
@@ -25,9 +16,4 @@ print(valr);
 var c = new int[] { 0, 1, 2, 3, 4, 5, 6, 7 };
 
 print(c);
-print(c, sep:"\t");
-
-#!csharp
-
-var _12 = abs(-15.6);
-print(_12);
+print(c, sep: "\t");

@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Script Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "dotnet",
+            "args": [
+                "exec",
+                // change to your own folder
+                "C:/Users/heartacker/.dotnet/tools/.store/dotnet-script/1.4.0/dotnet-script/1.4.0/tools/net7.0/any/dotnet-script.dll",
+                "${file}"
+            ],
+            "cwd": "${workspaceRoot}",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Script Run",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "dotnet",
+            "args": [
+                "script",
+                "${file}"
+            ],
+            "cwd": "${workspaceRoot}",
+            "stopAtEntry": false
+        }
+    ]
+}

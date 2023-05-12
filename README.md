@@ -4,13 +4,13 @@
 ![Nuget](https://img.shields.io/nuget/dt/Python.System?style=for-the-badge)
 
 write c# script like python
-## demo
+## [demo](./Python.System.Demo.csx)
 - code
 ```csharp
 using static Python.System;
 
 var addr = 0x12345678;
-var addrr = Hex(addr);
+var addrr = hex(addr);
 
 print(addr); // 305419896
 print(addrr);
@@ -35,5 +35,18 @@ print(c, sep:"\t");
 0b10010001101000101011001111000
 0 1 2 3 4 5 6 7
 0	1	2	3	4	5	6	7
+
+```
+
+## [dotnet script and repl](https://github.com/dotnet-script/dotnet-script#repl)
+
+```shell
+~$ dotnet script
+> #r "nuget: Python.System, 1.0.2"
+> using static Python.System;
+> hex(1024)
+"0x400"
+> print("Hello Scripy")
+Hello Scripy
 
 ```
