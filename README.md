@@ -1,10 +1,18 @@
 # Python.System
 
-![Nuget](https://img.shields.io/nuget/v/Python.System?style=for-the-badge)
+[![GitHub stars](https://img.shields.io/github/stars/heartacker/Python.System?style=for-the-badge)](https://github.com/heartacker/Python.System)
+[![Nuget](https://img.shields.io/nuget/v/Python.System?style=for-the-badge)](https://www.nuget.org/packages/Python.System)
 ![Nuget](https://img.shields.io/nuget/dt/Python.System?style=for-the-badge)
+[![GitHub release](https://img.shields.io/github/v/release/heartacker/Python.System?style=for-the-badge)](https://github.com/heartacker/Python.System/releases)
 
-write c# script like python
+**write c# script like python**
+
+我们主要是想在 `C#` 实现 **`Python` 的内置函数**，并**在`C#` 中可以直接使用**, 以便提高简单脚本的编写效率。
+
+We aim to implement the **built-in function of python in `C#`** and **direct use in `C#`** to improve the effect.
+
 ## demo
+
 - code
 
 <div align=center>
@@ -114,7 +122,7 @@ print(c, sep="\t")
 ## [dotnet script and repl](https://github.com/dotnet-script/dotnet-script#repl)
 
 ```shell
-~$ dotnet script
+~$ dotnet-script
 > #r "nuget: Python.System, 1.0.2"
 > using static Python.System;
 > hex(1024)
