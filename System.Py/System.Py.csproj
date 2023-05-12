@@ -12,12 +12,12 @@
     <Copyright>MIT</Copyright>
     <PackageProjectUrl></PackageProjectUrl>
     <PackageIcon>S.System.png</PackageIcon>
-    <RepositoryUrl>https://github.com/heartacker/Static.System.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/heartacker/System.Python.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>static;python;function;script;</PackageTags>
     <PackageReleaseNotes>初始化版本。添加 hex,bin,print 函数</PackageReleaseNotes>
     <AssemblyVersion>0.0.0.2</AssemblyVersion>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
   <ItemGroup>

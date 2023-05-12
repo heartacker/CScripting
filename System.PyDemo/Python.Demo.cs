@@ -1,4 +1,4 @@
-﻿using static Python.System;
+﻿using static System.Py;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

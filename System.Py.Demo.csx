@@ -1,5 +1,5 @@
-#r "nuget: Python.System, *"
-using static Python.System;
+#r "nuget: System.Py, *"
+using static System.Py;
 
 var addr = 0x12345678;
 var addrr = hex(addr);

@@ -19,10 +19,10 @@ using static Python.Runtime.PythonEngine;
 #if false
 using ObsoleteAttribute = System.ObsoleteAttribute;
 #else
-using ObsoleteAttribute = Python.Attr.ObsoleteAttribute;
+using ObsoleteAttribute = Internal.Py.Attributes.ObsoleteAttribute;
 #endif
 
-namespace Python
+namespace System
 {
     /// <summary>
     /// A:
@@ -136,7 +136,7 @@ namespace Python
     /// _
     /// __import__()
     /// </summary>
-    public static class System
+    public static class Py
     {
         #region abs
 

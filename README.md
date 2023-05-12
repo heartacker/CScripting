@@ -1,9 +1,9 @@
-# Python.System
+# System.Python
 
-[![GitHub stars](https://img.shields.io/github/stars/heartacker/Python.System?style=for-the-badge)](https://github.com/heartacker/Python.System)
-[![Nuget](https://img.shields.io/nuget/v/Python.System?style=for-the-badge)](https://www.nuget.org/packages/Python.System)
-![Nuget](https://img.shields.io/nuget/dt/Python.System?style=for-the-badge)
-[![GitHub release](https://img.shields.io/github/v/release/heartacker/Python.System?style=for-the-badge)](https://github.com/heartacker/Python.System/releases)
+[![GitHub stars](https://img.shields.io/github/stars/heartacker/System.Py?style=for-the-badge)](https://github.com/heartacker/System.Py)
+[![Nuget](https://img.shields.io/nuget/v/System.Py?style=for-the-badge)](https://www.nuget.org/packages/System.Py)
+![Nuget](https://img.shields.io/nuget/dt/System.Py?style=for-the-badge)
+[![GitHub release](https://img.shields.io/github/v/release/heartacker/System.Py?style=for-the-badge)](https://github.com/heartacker/System.Py/releases)
 
 **write c# script like python**
 
@@ -20,11 +20,11 @@ We aim to implement the **built-in function of python in `C#`** and **direct use
 <tr>
 <td class="col-6">
 
-🔗 [ **C#** ](./Python.System.Demo.csx)
+🔗 [ **C#** ](./System.Py.Demo.csx)
 
 ```csharp
-#r "nuget: Python.System, *"
-using static Python.System;
+#r "nuget: System.Py, *"
+using static System.Py;
 
 var addr = 0x12345678;
 var addrr = hex(addr);
@@ -49,10 +49,10 @@ print(c, sep:"\t");
 
 <td class="col-6">
 
-🔗 [ **Python** ](./Python.System.Compare.py)
+🔗 [ **Python** ](./System.Py.Compare.py)
 
 ```python
-#r
+#r "nuget: System.Py, *"
 
 
 addr = 0x12345678
@@ -123,11 +123,11 @@ print(c, sep="\t")
 
 ```shell
 ~$ dotnet-script
-> #r "nuget: Python.System, *"
-> using static Python.System;
+> #r "nuget: System.Py, *"
+> using static System.Py;
 > hex(1024)
 "0x400"
-> print("Hello Scripy")
-Hello Scripy
+> print("Hello System.Py")
+Hello System.Py
 
 ```

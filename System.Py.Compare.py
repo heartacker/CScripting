@@ -1,4 +1,4 @@
-#r "nuget: Python.System, *"
+#r "nuget: System.Py, *"
 
 
 addr = 0x12345678

@@ -12,7 +12,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Python.System\Python.System.csproj" />
+		<ProjectReference Include="..\System.Py\System.Py.csproj" />
 	</ItemGroup>
 
 </Project>

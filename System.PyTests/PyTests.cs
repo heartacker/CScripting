@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using static Python.System;
+using static System.Py;
 
-namespace Python.Tests
+namespace System.Tests
 {
     [TestClass()]
-    public class SystemTests
+    public class PyTests
     {
         [TestMethod()]
         [DataRow(10, "0xA")]

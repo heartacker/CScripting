@@ -1,6 +1,6 @@
 using System;
 
-namespace Python.Attr
+namespace Internal.Py.Attributes
 {
 
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Enum | AttributeTargets.Constructor |
