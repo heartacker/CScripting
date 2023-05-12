@@ -1,4 +1,5 @@
-﻿using System;
+﻿#define OBSOLETE1
+using System;
 using System.Collections;
 using System.IO;
 using System.Linq;
@@ -159,29 +160,37 @@ namespace Python
             }
         }
 
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, use `Abs` instead.")]
+#endif
         public static double abs(Complex num) => Abs(num);
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+#endif
         public static int abs(int num) => Math.Abs(num);
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+#endif
         public static long abs(long num) => Math.Abs(num);
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+#endif
         public static short abs(short num) => Math.Abs(num);
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+#endif
         public static sbyte abs(sbyte num) => Math.Abs(num);
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+#endif
         public static double abs(double num) => Math.Abs(num);
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+#endif
         public static decimal abs(decimal num) => Math.Abs(num);
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, `using static System.Math;` and use `Abs` instead.")]
+#endif
         public static float abs(float num) => Math.Abs(num);
 
         #endregion
@@ -202,8 +211,9 @@ namespace Python
                 return iterable.All(predicate);
         }
 
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, use `{nameof(All)}` instead.")]
+#endif
         public static bool all<TSource>(IEnumerable<TSource> iterable, Func<TSource, bool> predicate = null)
             => All(iterable, predicate);
 
@@ -225,8 +235,9 @@ namespace Python
                 return iterable.Any(predicate);
         }
 
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, use `{nameof(Any)}` instead.")]
+#endif
         public static bool any<TSource>(IEnumerable<TSource> iterable, Func<TSource, bool> predicate = null)
             => Any(iterable, predicate);
 
@@ -251,8 +262,9 @@ namespace Python
                 return string.Format(format, num);
             }
         }
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, use `{nameof(Hex)}` instead.")]
+#endif
         public static string hex(long num, int? width = null) => Hex(num, width);
 
         /// <summary>
@@ -274,8 +286,9 @@ namespace Python
                 return string.Format(format, num);
             }
         }
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, use `{nameof(Hex)}` instead.")]
+#endif
         public static string hex(ulong num, int? width = null) => Hex(num, width);
 
         #endregion
@@ -309,15 +322,17 @@ namespace Python
                 return "0b" + format;
             }
         }
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, use `{nameof(bin)}` instead.")]
+#endif
         public static string bin(long num, int? width = null) => Bin(num, width);
 
         #endregion
 
         #region print
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, use `{nameof(Print)}` instead.")]
+#endif
         public static void print(object objects,
                                  string sep = " ",
                                  string end = "\r\n",
@@ -337,8 +352,9 @@ namespace Python
             if (flush) _file.Flush();
         }
 
-
+#if OBSOLETE
         [Obsolete("This method is deprecated, use `{nameof(Print)}` instead.")]
+#endif
         public static void print(IList objects,
                                  string sep = " ",
                                  string end = "\r\n",
