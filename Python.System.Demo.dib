@@ -4,7 +4,7 @@
 
 #!csharp
 
-#r "nuget: Python.System, *"
+#r "nuget: Python.System, 1.0.2"
 using static Python.System;
 
 #!csharp
@@ -35,5 +35,5 @@ print(bin(value));
 
 #!csharp
 
-var _12 = abs(-12);
+var _12 = abs(-15.6);
 print(_12);
