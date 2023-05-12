@@ -16,6 +16,12 @@ using static Python.Runtime.Runtime;
 using static Python.Runtime.Py;
 using static Python.Runtime.PythonEngine;
 
+#if false
+using ObsoleteAttribute = System.ObsoleteAttribute;
+#else
+using ObsoleteAttribute = Python.Attr.ObsoleteAttribute;
+#endif
+
 namespace Python
 {
     /// <summary>
