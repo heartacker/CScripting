@@ -1,8 +1,4 @@
 ﻿using static Python.System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Python.SystemDemo
 {
@@ -15,6 +11,18 @@ namespace Python.SystemDemo
             print("hello world");
             print(a);
             print(a, sep: "\t");
+
+
+            var eargs = Environment.GetCommandLineArgs();
+
+            print(eargs);
+
+            help();
+
+            help(a);
+            help(typeof(Math));
+            help(typeof(Python.System));
         }
+
     }
 }
