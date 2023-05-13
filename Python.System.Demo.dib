@@ -2,13 +2,35 @@
 
 {"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"languageName":"csharp","name":"csharp"}]}}
 
+#!markdown
+
+## Python.System
+
+demo of Python.System
+
+#!markdown
+
+## ref the package
+- ref nuget package
+
 #!csharp
 
 #r "nuget: Python.System, *"
 
+#!markdown
+
+- using the static functions in `Python.System`
+
 #!csharp
 
 using static Python.System;
+
+#!markdown
+
+## usage
+write script like python
+
+#!csharp
 
 var addr = 0x12345678;
 var addrr = hex(addr);
@@ -31,3 +53,13 @@ print(c, sep:"\t");
 
 var _12 = abs(-15.6);
 print(_12);
+
+#!markdown
+
+### help
+
+#!csharp
+
+help(typeof(System.Math));
+
+help(typeof(System.IO.File));
