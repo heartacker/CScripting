@@ -3,10 +3,10 @@ using System.Numerics;
 
 namespace Python
 {
-    public static partial class System
+    public partial class System
     {
         #region abs
-        public const double e = Math.E;
+        //public const double e = Math.E;
         public const double pi = Math.PI;
 
         /// <summary>

@@ -2,7 +2,7 @@ using System;
 
 namespace Python
 {
-    public static partial class System
+    public partial class System
     {
         #region ord
 

@@ -5,7 +5,7 @@ using System.Numerics;
 
 namespace Python
 {
-    public static partial class System
+    public partial class System
     {
         #region any
         /// <summary>
