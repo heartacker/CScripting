@@ -13,7 +13,7 @@
   - [1.1. Instruction](#11-instruction)
   - [1.2. Recent Changelog](#12-recent-changelog)
   - [1.3. Demo](#13-demo)
-  - [1.4. dotnet script and repl](#14-dotnet-script-and-repl)
+  - [1.4. Dotnet script and repl](#14-dotnet-script-and-repl)
   - [1.5. Extended function list](#15-extended-function-list)
   - [1.6. Extended function list like `Matlab`](#16-extended-function-list-like-matlab)
   - [1.7. `Python` Built-in function list](#17-python-built-in-function-list)
@@ -38,7 +38,7 @@ We aim to implement the **built-in function of python in `C#`** and **direct use
   3. add `dir` function
 
 
-more information, see [CHANGELOG.md](https://github.com/heartacker/Python.System/CHANGELOG.md)
+more information, see [CHANGELOG.md](https://github.com/heartacker/Python.System/blob/master/CHANGELOG.md)
 
 ## 1.3. Demo
 
@@ -148,7 +148,7 @@ print(c, sep="\t")
 </table>
 </div>
 
-## 1.4. [dotnet script and repl](https://github.com/dotnet-script/dotnet-script#repl)
+## 1.4. [Dotnet script and repl](https://github.com/dotnet-script/dotnet-script#repl)
 
 ```shell
 ~$ dotnet-script
