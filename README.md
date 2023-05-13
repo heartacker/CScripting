@@ -1,9 +1,26 @@
-# Python.System
+# 1. Python.System
 
 [![GitHub stars](https://img.shields.io/github/stars/heartacker/Python.System?style=for-the-badge)](https://github.com/heartacker/Python.System)
 [![Nuget](https://img.shields.io/nuget/v/Python.System?style=for-the-badge)](https://www.nuget.org/packages/Python.System)
 ![Nuget](https://img.shields.io/nuget/dt/Python.System?style=for-the-badge)
 [![GitHub release](https://img.shields.io/github/v/release/heartacker/Python.System?style=for-the-badge)](https://github.com/heartacker/Python.System/releases)
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [1. Python.System](#1-pythonsystem)
+  - [1.1. Instruction](#11-instruction)
+  - [1.2. Recent Changelog](#12-recent-changelog)
+  - [1.3. Demo](#13-demo)
+  - [1.4. dotnet script and repl](#14-dotnet-script-and-repl)
+  - [1.5. Extended function list](#15-extended-function-list)
+  - [1.6. Extended function list like `Matlab`](#16-extended-function-list-like-matlab)
+  - [1.7. `Python` Built-in function list](#17-python-built-in-function-list)
+
+<!-- /code_chunk_output -->
+
+## 1.1. Instruction
 
 **write c# script like python**
 
@@ -11,16 +28,28 @@
 
 We aim to implement the **built-in function of python in `C#`** and **direct use in `C#`** to improve the effect.
 
-## demo
+## 1.2. Recent Changelog
 
-- code
+- time: 2023年5月14日
+- version: 1.0.5-pre
+- log:
+  1. change readme
+  2. add `help` function
+  3. add `dir` function
+
+
+more information, see [CHANGELOG.md](https://github.com/heartacker/Python.System/CHANGELOG.md)
+
+## 1.3. Demo
+
+- `Code`
 
 <div align=center>
 <table class="row">
 <tr>
 <td class="col-6">
 
-🔗 [ **C#** ](./Python.System.Demo.csx)
+🔗 [**C#**](./Python.System.Demo.csx)
 
 ```csharp
 #r "nuget: Python.System, *"
@@ -49,7 +78,7 @@ print(c, sep:"\t");
 
 <td class="col-6">
 
-🔗 [ **Python** ](./Python.System.Compare.py)
+🔗 [**Python**](./Python.System.Compare.py)
 
 ```python
 #r
@@ -79,7 +108,7 @@ print(c, sep="\t")
 </table>
 </div>
 
-- output
+- `Output`
 
 <div align=center>
 <table class="row">
@@ -94,7 +123,7 @@ print(c, sep="\t")
 305419896
 0b10010001101000101011001111000
 0 1 2 3 4 5 6 7
-0	1	2	3	4	5	6	7
+0 1 2 3 4 5 6 7
 
 ```
 
@@ -119,7 +148,7 @@ print(c, sep="\t")
 </table>
 </div>
 
-## [dotnet script and repl](https://github.com/dotnet-script/dotnet-script#repl)
+## 1.4. [dotnet script and repl](https://github.com/dotnet-script/dotnet-script#repl)
 
 ```shell
 ~$ dotnet-script
@@ -131,3 +160,131 @@ print(c, sep="\t")
 Hello Scripy
 
 ```
+
+## 1.5. Extended function list
+
+- MyOwn
+  - [ ] load()
+  - [ ] unload()
+
+## 1.6. Extended function list like `Matlab`
+
+- coming
+  - [ ] ???
+  - [ ] ????
+
+## 1.7. `Python` Built-in function list
+
+- A
+  - [x] [`abs()`](./Python.System/Python/abs.cs)
+  - [ ] `aiter()`
+  - [x] [`all()`](./Python.System/Python/all.cs)
+  - [x] [`any()`](./Python.System/Python/any.cs)
+  - [ ] `anext()`
+  - [ ] `ascii()`
+
+- B
+  - [x] [`bin()`](./Python.System/Python/bin.cs)
+  - [ ] `bool()`
+  - [ ] `breakpoint()`
+  - [x] [`bytearray()`](./Python.System/Python/bytearry.cs)
+  - [x] [`bytes()`](./Python.System/Python/bytearry.cs)
+
+- C
+  - [ ] `callable()`
+  - [x] [`chr()`](./Python.System/Python/chr.cs)
+  - [ ] `classmethod()`
+  - [ ] `compile()` **
+  - [ ] `complex()` **
+
+- D
+  - [ ] `delattr()`
+  - [ ] `dict()`
+  - [ ] `dir()` *
+  - [ ] `divmod()`
+
+- E
+  - [ ] `enumerate()`
+  - [ ] `eval()`
+  - [ ] `exec()`
+
+- F
+  - [ ] `filter()`
+  - [ ] `float()`
+  - [ ] `format()`
+  - [ ] `frozenset()`
+
+- G
+  - [ ] `getattr()`
+  - [ ] `globals()`
+
+- H
+  - [ ] `hasattr()`
+  - [ ] `hash()`
+  - [x] [`help()`](./Python.System/Python/help.cs)
+  - [x] [`hex()`](./Python.System/Python/hex.cs)
+
+- I
+  - [ ] `id()`
+  - [ ] `input()`
+  - [ ] `int()`
+  - [ ] `isinstance()`
+  - [ ] `issubclass()`
+  - [ ] `iter()`
+
+- L
+  - [ ] `len()`
+  - [ ] `list()`
+  - [ ] `locals()`
+
+- M
+  - [ ] `map()`
+  - [ ] `max()`
+  - [ ] `memoryview()`
+  - [ ] `min()`
+
+- N
+  - [ ] `next()`
+
+- O
+  - [ ] `object()`
+  - [ ] `oct()`
+  - [ ] `open()`
+  - [x] [`ord()`](./Python.System/Python/ord.cs)
+
+- P
+  - [ ] `pow()`
+  - [x] [`print()`](./Python.System/Python/print.cs)
+  - [ ] `property()`
+
+- R
+  - [ ] `range()`
+  - [ ] `repr()`
+  - [ ] `reversed()`
+  - [ ] `round()`
+
+- S
+  - [ ] `set()`
+  - [ ] `setattr()`
+  - [ ] `slice()`
+  - [ ] `sorted()`
+  - [ ] `staticmethod()`
+  - [ ] `str()`
+  - [ ] `sum()`
+  - [ ] `super()`
+
+- T
+  - [ ] `tuple()`
+  - [ ] `type()`
+  -
+
+- V
+  - [ ]`vars()`
+
+- Z
+  - [ ] `zip()`
+
+- misc
+  - [ ] `_`
+  - [ ] `__import__()`
+  - [ ] ???
