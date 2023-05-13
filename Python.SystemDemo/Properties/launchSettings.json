@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Python.SystemDemo": {
+      "commandName": "Project",
+      "commandLineArgs": "Hello Python.System"
+    }
+  }
+}
