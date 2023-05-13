@@ -37,7 +37,7 @@ namespace Python
         {
             var _file = file ?? Console.Out;
 
-            _file.Write(@object.ToString());
+            _file.Write(@object);
             _file.Write(end);
             if (flush) _file.Flush();
         }
