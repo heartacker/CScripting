@@ -24,16 +24,16 @@
 
 **write c# script like python**
 
-!!! done 思路
+!!! tip 思路
     我们主要是想在 `C#` 实现 **`Python` 的内置函数**，并**在`C#` 中可以直接使用**, 以便提高简单脚本的编写效率。
 
     !!! tip 欢迎 ❤️
         欢迎 任何 PR
 
-!!! done idea
+!!! tip idea
     We aim to implement the **built-in function of python in `C#`** and **direct use in `C#`** to improve the effect.
 
-    !!! done **Welcome** ❤️
+    !!! tip **Welcome** ❤️
         welcome any pull request
 
 ## 1.2. Recent Changelog
