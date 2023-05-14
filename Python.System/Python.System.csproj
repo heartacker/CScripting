@@ -8,7 +8,9 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Static System function Like Python</Title>
     <Authors>heartacker</Authors>
-    <Description>provide some static funtion that like python and write c# some like Python</Description>
+    <Description>provide some static funtion that like python and write c# some like Python
+      see https://github.com/heartacker/Static.System.git
+    </Description>
     <Copyright>MIT</Copyright>
     <PackageProjectUrl></PackageProjectUrl>
     <PackageIcon>S.System.png</PackageIcon>
@@ -17,7 +19,7 @@
     <PackageTags>static;python;function;script;</PackageTags>
     <PackageReleaseNotes>see https://github.com/heartacker/Python.System/blob/master/CHANGELOG.md</PackageReleaseNotes>
     <AssemblyVersion>0.0.0.2</AssemblyVersion>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
   </PropertyGroup>
 
   <ItemGroup>
