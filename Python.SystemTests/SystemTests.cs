@@ -43,5 +43,22 @@ namespace Python.Tests
         {
             print(abcs);
         }
+
+
+        [TestMethod()]
+        public void printTestSep()
+        {
+            int[] c = new int[] { 0, 1, 2, 3, 4, 5, 6, 7 };
+            print(c, "+");
+        }
+
+        [TestMethod()]
+        [DataRow(8, "0o10")]
+        [DataRow(0x12345678, "0o2215053170")]
+
+        public void octTest(long x, string res)
+        {
+            Assert.AreEqual(res, oct(x));
+        }
     }
 }
