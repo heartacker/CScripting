@@ -23,6 +23,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- https://blog.51cto.com/u_13267193/5552052 -->
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="*" />
     <PackageReference Include="System.Reflection.Emit" Version="*" />
   </ItemGroup>
 
