@@ -52,17 +52,25 @@ namespace Python
                                  bool flush = false)
         {
             var _file = file ?? Console.Out;
-            string str = "";
-            foreach (var item in @object)
+            if (@object is String)
             {
-                str += item.ToString();
-                str += sep;
+                _file.Write(@object);
+                _file.Write(end);
             }
+            else
+            {
+                string str = "";
+                foreach (var item in @object)
+                {
+                    str += item.ToString();
+                    str += sep;
+                }
 
-            str = str.Remove(str.Length - sep.Length, sep.Length);
+                str = str.Remove(str.Length - sep.Length, sep.Length);
 
-            _file.Write(str);
-            _file.Write(end);
+                _file.Write(str);
+                _file.Write(end);
+            }
             if (flush) _file.Flush();
         }
         #endregion
