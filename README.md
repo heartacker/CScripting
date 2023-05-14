@@ -24,18 +24,27 @@
 
 **write c# script like python**
 
-我们主要是想在 `C#` 实现 **`Python` 的内置函数**，并**在`C#` 中可以直接使用**, 以便提高简单脚本的编写效率。
+!!! done 思路
+    我们主要是想在 `C#` 实现 **`Python` 的内置函数**，并**在`C#` 中可以直接使用**, 以便提高简单脚本的编写效率。
 
-We aim to implement the **built-in function of python in `C#`** and **direct use in `C#`** to improve the effect.
+    !!! tip 欢迎 ❤️
+        欢迎 任何 PR
+
+!!! done idea
+    We aim to implement the **built-in function of python in `C#`** and **direct use in `C#`** to improve the effect.
+
+    !!! done **Welcome** ❤️
+        welcome any pull request
 
 ## 1.2. Recent Changelog
 
-- time: 2023年5月14日
-- version: 1.0.5-pre
+- time: 2023年5月15日
+- version: 1.0.6
 - log:
   1. change readme
   2. add `help` function
   3. add `dir` function
+  4. fix trim `print()` last sep
 
 
 more information, see [CHANGELOG.md](https://github.com/heartacker/Python.System/blob/master/CHANGELOG.md)
