@@ -5,6 +5,11 @@
 ![Nuget](https://img.shields.io/nuget/dt/Python.System?style=for-the-badge)
 [![GitHub release](https://img.shields.io/github/v/release/heartacker/Python.System?style=for-the-badge)](https://github.com/heartacker/Python.System/releases)
 
+- [Roslyn](https://learn.microsoft.com/zh-cn/dotnet/api/?view=roslyn-dotnet-4.3.0)
+- [CSharpScript](https://blog.51cto.com/u_13267193/5552052)
+- [CSharpScript MemoryManager](https://blog.51cto.com/ineuos/4027860)
+- [Unity引擎与C#脚本](https://blog.51cto.com/u_15127597/4740392)
+- [Scripting-API-Samples](https://github.com/dotnet/roslyn/blob/main/docs/wiki/Scripting-API-Samples.md)
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
