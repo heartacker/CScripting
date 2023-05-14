@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -15,13 +15,13 @@
     <RepositoryUrl>https://github.com/heartacker/Static.System.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>static;python;function;script;</PackageTags>
-    <PackageReleaseNotes>初始化版本。添加 hex,bin,print 函数</PackageReleaseNotes>
+    <PackageReleaseNotes>see https://github.com/heartacker/Python.System/blob/master/CHANGELOG.md</PackageReleaseNotes>
     <AssemblyVersion>0.0.0.2</AssemblyVersion>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
   </PropertyGroup>
 
   <ItemGroup>
-     <!--<PackageReference Include="pythonnet" Version="3.*" />--> 
+    <PackageReference Include="System.Reflection.Emit" Version="*" />
   </ItemGroup>
 
   <ItemGroup>

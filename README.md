@@ -46,7 +46,6 @@
   3. add `dir` function
   4. fix trim `print()` last sep
 
-
 more information, see [CHANGELOG.md](https://github.com/heartacker/Python.System/blob/master/CHANGELOG.md)
 
 ## 1.3. Demo
@@ -90,7 +89,7 @@ print(c, sep:"\t");
 🔗 [**Python**](./Python.System.Compare.py)
 
 ```python
-#r
+#r "nuget: Python.System, *"
 
 
 addr = 0x12345678
@@ -173,14 +172,14 @@ Hello Scripy
 ## 1.5. Extended function list
 
 - MyOwn
-  - [ ] load()
-  - [ ] unload()
+  - [ ] `load()`
+  - [ ] `unload()`
 
 ## 1.6. Extended function list like `Matlab`
 
 - coming
-  - [ ] ???
-  - [ ] ????
+  - [ ] `???`
+  - [ ] `????`
 
 ## 1.7. `Python` Built-in function list
 
@@ -257,7 +256,7 @@ Hello Scripy
 
 - O
   - [ ] `object()`
-  - [ ] `oct()`
+  - [x] [`oct()`](./Python.System/Python/oct.cs)
   - [ ] `open()`
   - [x] [`ord()`](./Python.System/Python/ord.cs)
 
@@ -296,4 +295,4 @@ Hello Scripy
 - misc
   - [ ] `_`
   - [ ] `__import__()`
-  - [ ] ???
+  - [ ] `???`
