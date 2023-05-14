@@ -26,6 +26,18 @@
             ],
             "cwd": "${workspaceRoot}",
             "stopAtEntry": false
-        }
+        },
+        {
+            "name": "demo",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildDemo",
+            "program": "${workspaceFolder}/Python.SystemDemo/bin/Debug/net7.0-windows/Python.SystemDemo.exe",
+            "requireExactSource": false,
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
     ]
 }

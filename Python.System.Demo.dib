@@ -15,7 +15,7 @@ demo of Python.System
 
 #!csharp
 
-#r "nuget: Python.System, 1.0.6-debug4"
+#r "nuget: Python.System, *"
 
 #!markdown
 
