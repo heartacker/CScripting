@@ -6,9 +6,13 @@ using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.Scripting;
 using System.IO;
 
+var so = ScriptOptions.Default.WithImports("System.IO");
+so.WithImports("System");
 Console.WriteLine(@"测试输入输出函数:Directory.GetCurrentDirectory()");
-var res = await CSharpScript.EvaluateAsync("Directory.GetCurrentDirectory()",
-     ScriptOptions.Default.WithImports("System.IO"));
+var res = await CSharpScript.EvaluateAsync(@"
+using System;
+Console.WriteLine(10086);
+Directory.GetCurrentDirectory()",so);// *if end with ; no return value
 Console.WriteLine(res);
 
 
