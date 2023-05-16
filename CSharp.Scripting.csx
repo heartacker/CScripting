@@ -1,7 +1,6 @@
 #r "nuget: CScripting, *"
 #r "nuget: Microsoft.CodeAnalysis.CSharp.Scripting, *"
 
-using Python;
 using static CScripting;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Scripting;
