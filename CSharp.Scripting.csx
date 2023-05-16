@@ -16,7 +16,7 @@ Console.WriteLine(@"测试输入输出函数:Directory.GetCurrentDirectory()");
 var res = await CSharpScript.EvaluateAsync(@"
 using System;
 Console.WriteLine(10086);
-Directory.GetCurrentDirectory()",so);// *if end with ; no return value
+Directory.GetCurrentDirectory()", so);// *if end with ; no return value
 Console.WriteLine(res);
 
 
@@ -40,6 +40,7 @@ var script = CSharpScript.Create(codeText, scriptOptions);
 */
 try
 {
+    script.Compile();
     res = await script.RunAsync();
     print(res);
 }
