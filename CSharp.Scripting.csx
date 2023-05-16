@@ -1,9 +1,13 @@
 #r "nuget: Python.System, *"
 #r "nuget: Microsoft.CodeAnalysis.CSharp.Scripting, *"
+
 using Python;
 using static Python.System;
-using Microsoft.CodeAnalysis.CSharp.Scripting;
+using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Scripting;
+using Microsoft.CodeAnalysis.CSharp;
+using Microsoft.CodeAnalysis.CSharp.Scripting;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.IO;
 
 Console.WriteLine(@"测试输入输出函数:Directory.GetCurrentDirectory()");
@@ -14,9 +18,29 @@ Console.WriteLine(res);
 
 var codeText = File.ReadAllText(@"./CSharp.Scripting.codetext.csx");
 codeText = codeText.Insert(0, "using static Python.System;\r\n");
+codeText = codeText.Insert(0, "using static Python.System;\r\n");
 var scriptOptions = ScriptOptions.Default
     .AddReferences(typeof(Python.System).Assembly);
 scriptOptions.AddReferences(typeof(System.Math).Assembly);
 
-res = await CSharpScript.EvaluateAsync(codeText, scriptOptions);
-Console.WriteLine(res);
+SyntaxTree tree = CSharpSyntaxTree.ParseText(codeText);
+
+var script = CSharpScript.Create(codeText, scriptOptions);
+/*
+        public ScriptRunner<T> CreateDelegate(CancellationToken cancellationToken = default);
+        public Task<ScriptState<T>> RunAsync(object globals, CancellationToken cancellationToken);
+        public Task<ScriptState<T>> RunAsync(object globals = null, Func<Exception, bool> catchException = null, CancellationToken cancellationToken = default);
+        public Task<ScriptState<T>> RunFromAsync(ScriptState previousState, CancellationToken cancellationToken);
+        public Task<ScriptState<T>> RunFromAsync(ScriptState previousState, Func<Exception, bool> catchException = null, CancellationToken cancellationToken = default);
+        public Script<T> WithOptions(ScriptOptions options);
+*/
+try
+{
+    res = await script.RunAsync();
+    print(res);
+}
+catch (System.Exception codeError)
+{
+    print(codeError.Message);
+    // print(codeError.StackTrace);
+}
