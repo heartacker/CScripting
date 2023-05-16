@@ -1,8 +1,8 @@
-#r "nuget: Python.System, *"
+#r "nuget: CScripting, *"
 #r "nuget: Microsoft.CodeAnalysis.CSharp.Scripting, *"
 
 using Python;
-using static Python.System;
+using static CScripting;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.CodeAnalysis.CSharp;
@@ -21,10 +21,10 @@ Console.WriteLine(res);
 
 
 var codeText = File.ReadAllText(@"./CSharp.Scripting.codetext.csx");
-codeText = codeText.Insert(0, "using static Python.System;\r\n");
-codeText = codeText.Insert(0, "using static Python.System;\r\n");
+codeText = codeText.Insert(0, "using static CScripting;\r\n");
+codeText = codeText.Insert(0, "using static CScripting;\r\n");
 var scriptOptions = ScriptOptions.Default
-    .AddReferences(typeof(Python.System).Assembly);
+    .AddReferences(typeof(CScripting).Assembly);
 scriptOptions.AddReferences(typeof(System.Math).Assembly);
 
 SyntaxTree tree = CSharpSyntaxTree.ParseText(codeText);

@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<OutputType>Library</OutputType>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>CScripting: CSharp Static System function Like Python</Title>
+		<Authors>heartacker</Authors>
+		<Description>
+			provide some static funtion that like python and write c# some like Python
+
+			see https://github.com/heartacker/CScripting.git
+		</Description>
+		<Copyright>MIT</Copyright>
+		<PackageProjectUrl></PackageProjectUrl>
+		<PackageIcon>CScripting.png</PackageIcon>
+		<RepositoryUrl>https://github.com/heartacker/CScripting.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>static;python;function;script;CScripting;csharpscript;matlab;cli</PackageTags>
+		<PackageReleaseNotes>see https://github.com/heartacker/CScripting/blob/master/CHANGELOG.md</PackageReleaseNotes>
+		<Version>0.0.1-preview2023-5-16</Version>
+		<PackageId>CScripting</PackageId>
+		<AssemblyName>$(MSBuildProjectName)</AssemblyName>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- https://blog.51cto.com/u_13267193/5552052 -->
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="*" />
+		<PackageReference Include="System.Reflection.Emit" Version="*" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="CScripting.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>

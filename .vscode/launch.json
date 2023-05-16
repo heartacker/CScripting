@@ -32,7 +32,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "buildDemo",
-            "program": "${workspaceFolder}/Python.SystemDemo/bin/Debug/net7.0-windows/Python.SystemDemo.exe",
+            "program": "${workspaceFolder}/CScriptingDemo/bin/Debug/net7.0-windows/CScriptingDemo.exe",
             "requireExactSource": false,
             "args": [],
             "cwd": "${workspaceFolder}",

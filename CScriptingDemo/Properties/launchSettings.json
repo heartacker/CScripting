@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CScriptingDemo": {
+      "commandName": "Project",
+      "commandLineArgs": "Hello CScripting"
+    }
+  }
+}

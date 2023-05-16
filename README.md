@@ -1,9 +1,9 @@
-# 1. Python.System
+# 1. CScripting
 
-[![GitHub stars](https://img.shields.io/github/stars/heartacker/Python.System?style=for-the-badge)](https://github.com/heartacker/Python.System)
-[![Nuget](https://img.shields.io/nuget/v/Python.System?style=for-the-badge)](https://www.nuget.org/packages/Python.System)
-![Nuget](https://img.shields.io/nuget/dt/Python.System?style=for-the-badge)
-[![GitHub release](https://img.shields.io/github/v/release/heartacker/Python.System?style=for-the-badge)](https://github.com/heartacker/Python.System/releases)
+[![GitHub stars](https://img.shields.io/github/stars/heartacker/CScripting?style=for-the-badge)](https://github.com/heartacker/CScripting)
+[![Nuget](https://img.shields.io/nuget/v/CScripting?style=for-the-badge)](https://www.nuget.org/packages/CScripting)
+![Nuget](https://img.shields.io/nuget/dt/CScripting?style=for-the-badge)
+[![GitHub release](https://img.shields.io/github/v/release/heartacker/CScripting?style=for-the-badge)](https://github.com/heartacker/CScripting/releases)
 
 - [Roslyn](https://learn.microsoft.com/zh-cn/dotnet/api/?view=roslyn-dotnet-4.3.0)
 - [CSharpScript](https://blog.51cto.com/u_13267193/5552052)
@@ -14,7 +14,7 @@
 
 <!-- code_chunk_output -->
 
-- [1. Python.System](#1-pythonsystem)
+- [1. CScripting](#1-cscripting)
   - [1.1. Instruction](#11-instruction)
   - [1.2. Recent Changelog](#12-recent-changelog)
   - [1.3. Demo](#13-demo)
@@ -51,7 +51,7 @@
   3. add `dir` function
   4. fix trim `print()` last sep
 
-more information, see [CHANGELOG.md](https://github.com/heartacker/Python.System/blob/master/CHANGELOG.md)
+more information, see [CHANGELOG.md](https://github.com/heartacker/CScripting/blob/master/CHANGELOG.md)
 
 ## 1.3. Demo
 
@@ -62,11 +62,11 @@ more information, see [CHANGELOG.md](https://github.com/heartacker/Python.System
 <tr>
 <td class="col-6">
 
-🔗 [**C#**](./Python.System.Demo.csx)
+🔗 [**C#**](./CScripting.Demo.csx)
 
 ```csharp
-#r "nuget: Python.System, *"
-using static Python.System;
+#r "nuget: CScripting, *"
+using static CScripting;
 
 var addr = 0x12345678;
 var addrr = hex(addr);
@@ -91,10 +91,10 @@ print(c, sep:"\t");
 
 <td class="col-6">
 
-🔗 [**Python**](./Python.System.Compare.py)
+🔗 [**Built-in**](./CScripting.Compare.py)
 
 ```python
-#r "nuget: Python.System, *"
+#r "nuget: CScripting, *"
 
 
 addr = 0x12345678
@@ -165,8 +165,8 @@ print(c, sep="\t")
 
 ```shell
 ~$ dotnet-script
-> #r "nuget: Python.System, *"
-> using static Python.System;
+> #r "nuget: CScripting, *"
+> using static CScripting;
 > hex(1024)
 "0x400"
 > print("Hello Scripy")
@@ -189,23 +189,23 @@ Hello Scripy
 ## 1.7. `Python` Built-in function list
 
 - A
-  - [x] [`abs()`](./Python.System/Python/abs.cs)
+  - [x] [`abs()`](./CScripting/Built-in/abs.cs)
   - [ ] `aiter()`
-  - [x] [`all()`](./Python.System/Python/all.cs)
-  - [x] [`any()`](./Python.System/Python/any.cs)
+  - [x] [`all()`](./CScripting/Built-in/all.cs)
+  - [x] [`any()`](./CScripting/Built-in/any.cs)
   - [ ] `anext()`
   - [ ] `ascii()`
 
 - B
-  - [x] [`bin()`](./Python.System/Python/bin.cs)
+  - [x] [`bin()`](./CScripting/Built-in/bin.cs)
   - [ ] `bool()`
   - [ ] `breakpoint()`
-  - [x] [`bytearray()`](./Python.System/Python/bytearry.cs)
-  - [x] [`bytes()`](./Python.System/Python/bytearry.cs)
+  - [x] [`bytearray()`](./CScripting/Built-in/bytearry.cs)
+  - [x] [`bytes()`](./CScripting/Built-in/bytearry.cs)
 
 - C
   - [ ] `callable()`
-  - [x] [`chr()`](./Python.System/Python/chr.cs)
+  - [x] [`chr()`](./CScripting/Built-in/chr.cs)
   - [ ] `classmethod()`
   - [ ] `compile()` **
   - [ ] `complex()` **
@@ -234,8 +234,8 @@ Hello Scripy
 - H
   - [ ] `hasattr()`
   - [ ] `hash()`
-  - [x] [`help()`](./Python.System/Python/help.cs)
-  - [x] [`hex()`](./Python.System/Python/hex.cs)
+  - [x] [`help()`](./CScripting/Built-in/help.cs)
+  - [x] [`hex()`](./CScripting/Built-in/hex.cs)
 
 - I
   - [ ] `id()`
@@ -261,13 +261,13 @@ Hello Scripy
 
 - O
   - [ ] `object()`
-  - [x] [`oct()`](./Python.System/Python/oct.cs)
+  - [x] [`oct()`](./CScripting/Built-in/oct.cs)
   - [ ] `open()`
-  - [x] [`ord()`](./Python.System/Python/ord.cs)
+  - [x] [`ord()`](./CScripting/Built-in/ord.cs)
 
 - P
   - [ ] `pow()`
-  - [x] [`print()`](./Python.System/Python/print.cs)
+  - [x] [`print()`](./CScripting/Built-in/print.cs)
   - [ ] `property()`
 
 - R
