@@ -14,8 +14,7 @@
             "group": "none",
             "presentation": {
                 "reveal": "always"
-            },
-            "problemMatcher": "$msCompile"
+            }
         },
         {
             "label": "buildDemo",
