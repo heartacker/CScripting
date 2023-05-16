@@ -76,6 +76,7 @@ namespace Python
             sb.AppendLine("=================================================================");
 
             sb.AppendLine("Name\t\t" + request.FullName);
+            sb.AppendLine("NameSpace\t\t\t" + request.Namespace);
             sb.AppendLine("Assembly\t\t\t" + request.Assembly.FullName);
             sb.AppendLine();
             sb.AppendLine("field:");
