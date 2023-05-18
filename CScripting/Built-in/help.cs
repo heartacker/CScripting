@@ -80,18 +80,18 @@ public partial class CScripting
 
         sb.AppendLine("=================================================================");
 
-        sb.AppendLine("Name\t\t" + request.FullName);
-        sb.AppendLine("NameSpace\t\t\t" + request.Namespace);
-        sb.AppendLine("Assembly\t\t\t" + request.Assembly.FullName);
+        sb.AppendLine("Name".FixLens() + "\t" + request.FullName);
+        sb.AppendLine("NameSpace".FixLens() + "\t" + request.Namespace);
+        sb.AppendLine("Assembly".FixLens() + "\t" + request.Assembly.FullName);
         sb.AppendLine();
-        sb.AppendLine("field:");
+        sb.AppendLine("field");
         sb.AppendLine("----------------------------------------------------------------");
 
         foreach (var item in c.members)
         {
             if (item.Value is FieldObject)
             {
-                sb.AppendLine($"{item.Key}:\t\t\t{((FieldObject)item.Value).fi}");
+                sb.AppendLine($"{item.Key.ToString().FixLens()}\t{((FieldObject)item.Value).fi}");
             }
         }
         sb.AppendLine();
@@ -102,7 +102,7 @@ public partial class CScripting
         {
             if (item.Value is MethodObject)
             {
-                sb.AppendLine($"{item.Key}:\t\t\t{((MethodObject)item.Value).mlist[0].ToString()}");
+                sb.AppendLine($"{item.Key.ToString().FixLens()}\t{((MethodObject)item.Value).mlist[0]}");
             }
         }
         sb.AppendLine();
