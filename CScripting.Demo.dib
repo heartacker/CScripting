@@ -70,3 +70,7 @@ print(_12);
 help(typeof(System.Math));
 
 help(typeof(System.IO.File));
+
+#!csharp
+
+print(bytes(5))

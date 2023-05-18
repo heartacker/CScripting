@@ -20,7 +20,7 @@
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>static;python;function;script;CScripting;csharpscript;matlab;cli</PackageTags>
 		<PackageReleaseNotes>see https://github.com/heartacker/CScripting/blob/master/CHANGELOG.md</PackageReleaseNotes>
-		<Version>0.0.1-preview2023-5-16</Version>
+		<Version>0.0.2</Version>
 		<PackageId>CScripting</PackageId>
 		<AssemblyName>$(MSBuildProjectName)</AssemblyName>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
@@ -34,6 +34,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<!-- <PackageReference Include="FftSharp" Version="1.1.6" /> -->
+		<!-- <PackageReference Include="MathNet.Numerics" Version="5.0.0" /> -->
 		<!-- https://blog.51cto.com/u_13267193/5552052 -->
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="*" />
 		<PackageReference Include="System.Reflection.Emit" Version="*" />
