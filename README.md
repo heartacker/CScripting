@@ -91,7 +91,7 @@ print(c, sep:"\t");
 
 <td class="col-6">
 
-🔗 [**Built-in**](./CScripting.Compare.py)
+🔗 [**Python**](./CScripting.Compare.py)
 
 ```python
 #r "nuget: CScripting, *"
