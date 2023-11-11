@@ -1,5 +1,7 @@
 # 1. CScripting
 
+![Visualization of the codebase](./diagram.svg)
+
 [![GitHub stars](https://img.shields.io/github/stars/heartacker/CScripting?style=for-the-badge)](https://github.com/heartacker/CScripting)
 [![Nuget](https://img.shields.io/nuget/v/CScripting?style=for-the-badge)](https://www.nuget.org/packages/CScripting)
 ![Nuget](https://img.shields.io/nuget/dt/CScripting?style=for-the-badge)
