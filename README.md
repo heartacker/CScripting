@@ -171,8 +171,8 @@ print(c, sep="\t")
 > using static CScripting;
 > hex(1024)
 "0x400"
-> print("Hello Scripy")
-Hello Scripy
+> print("Hello CScripting")
+Hello CScripting
 
 ```
 
