@@ -32,12 +32,12 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "buildDemo",
-            "program": "${workspaceFolder}/CScriptingDemo/bin/Debug/net7.0-windows/CScriptingDemo.exe",
+            "program": "${workspaceFolder}/CScriptingDemo/bin/Debug/net8.0-windows/CScriptingDemo.dll",
             "requireExactSource": false,
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
-            "console": "internalConsole"
+            "console": "integratedTerminal"
         },
     ]
 }
